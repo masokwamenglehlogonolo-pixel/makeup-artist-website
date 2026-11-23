@@ -17,7 +17,6 @@ const form = document.querySelector('#contact-form');
 const status = document.querySelector('#form-status');
 
 form.addEventListener('submit', event => {
-  event.preventEvent?.();
   event.preventDefault();
   const data = new FormData(form);
   const subject = encodeURIComponent(`${data.get('service')} — Booking enquiry`);
